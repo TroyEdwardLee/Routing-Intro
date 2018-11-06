@@ -3,7 +3,11 @@ import { Route, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SettingsComponent } from './settings/settings.component';
 
-const routes: Route[] = [{ path: 'home', component: HomeComponent }, { path: 'settings', component: SettingsComponent }];
+const routes: Route[] = [
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'settings', component: SettingsComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
